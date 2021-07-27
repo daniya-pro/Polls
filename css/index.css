@@ -1,0 +1,136 @@
+html,
+body {
+
+  height: 100%;
+  margin: 0;
+
+}
+
+.Menue-Bar {
+  width: 80px;
+  color: white;
+  height: 100%;
+  background-color: #001528;
+  padding-top: 10px;
+
+  display: inline-block;
+
+}
+
+.center {
+  text-align: center;
+}
+
+.poll-logo {
+
+  width: 50px;
+
+}
+
+.would-you-rather-text {
+  word-spacing: -4px;
+  font-weight: 600;
+  font-family: monospace;
+  text-transform: uppercase;
+
+}
+
+.item {
+  color: #a5adb5;
+  cursor: pointer;
+
+  
+  margin-top: 13px;
+}
+.icon-parent:hover .item{
+
+  color:white ;
+}
+
+.icon-parent {
+  height: 43px;
+color: #a5adb5;
+cursor: pointer;
+
+
+}
+hr{border-color:#a5adb5;}
+/* Tooltip container */
+.icon-parent {
+  position: relative;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+/* .icon-parent .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-family: cursive;
+
+  border-radius: 6px;
+
+  /* Position the tooltip text
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip 
+  opacity: 0;
+  transition: opacity 0.3s;
+} */
+.icon-parent .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 65px;
+  margin-left: -77px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  transform: rotate(90deg)
+  }
+
+  .icon-parent .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 0px;
+    font-family: monospace;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    height: 15px;
+    top: 9px;
+    bottom: 125%;
+    left: 24%;
+    margin-left: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+}
+.darkblueOnActive:focus .item{     
+color: white;
+}.darkblueOnActive:focus{
+background-color:#1a90ff;    
+}
+.darkblueOnActive{  
+  width: -webkit-fill-available;
+  border: 1px solid #001528;
+  background: #001528;
+  height: 43px;
+  padding-bottom: 16px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.icon-parent :hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
